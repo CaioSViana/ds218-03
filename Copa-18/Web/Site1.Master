@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Web.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootbox.min.js"></script>
+    <script src="Scripts/toastr.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="background-color:indigo;">
+            Css no topo
+        <asp:Menu ID="Menu1" runat="server" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" StaticSubMenuIndent="10px">
+            <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#B5C7DE" />
+            <DynamicSelectedStyle BackColor="#507CD1" />
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Página Inicial" Value="Página Inicial">
+                    <asp:MenuItem NavigateUrl="~/Album.aspx" Text="Album" Value="Album"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Tabela.aspx" Text="Tabela" Value="Tabela"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/RelatorioCopa.aspx" Text="Relatorio" Value="Relatorio"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#507CD1" />
+            </asp:Menu>
+        </div>
+        <div class"container body-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  
+            
+            </asp:ContentPlaceHolder>
+       <hr />
+            <footer style="background-color:indigo;">
+                <p>$copy; <%: DateTime.Now.Year %> - FOOTBALL - DS- II</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

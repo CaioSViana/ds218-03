@@ -1,0 +1,14 @@
+::HandleGuestTopologyChange: Windows for extra guest monitors will not be shown
+2019-01-31T16:01:43.469-02:00| vmui| I125: wui::control::MKSPanel::UpdateMKSLayout: MKS view is not initialized or not rendering.
+2019-01-31T16:01:43.469-02:00| vmui| I125: wui::control::MKSPanel::UpdateMKSLayout: MKS view is not initialized or not rendering.
+2019-01-31T16:01:54.253-02:00| vmui| I125: cui::VMBindingUnityMgr::OnGuestCanRunUnityChanged: The guest is a supported version of Windows, checking Tools status. Version status: 4, running status: 2
+2019-01-31T16:01:54.253-02:00| vmui| I125: cui::VMBindingUnityMgr::OnGuestCanRunUnityChanged: Tools status is OUTDATED
+2019-01-31T16:02:00.393-02:00| vmui| I125: SOCKET creating new socket, connecting to 2147483647:1025
+2019-01-31T16:02:00.471-02:00| vmui| I125: SOCKET connect failed, error 10022: Unknown error 10022 (0x2726)
+2019-01-31T16:03:43.419-02:00| vmui| I125: cui::VMBindingUnityMgr::OnGuestCanRunUnityChanged: The guest is a supported version of Windows, checking Tools status. Version status: 4, running status: 0
+2019-01-31T16:03:43.419-02:00| vmui| I125: cui::VMBindingUnityMgr::OnGuestCanRunUnityChanged: Tools status is OUTDATED
+2019-01-31T16:03:46.335-02:00| vmui| I125: cui::VMBindingUnityMgr::OnGuestCanRunUnityChanged: The guest is a supported version of Windows, checking Tools status. Version status: 4, running status: 0
+2019-01-31T16:03:46.335-02:00| vmui| I125: cui::VMBindingUnityMgr::OnGuestCanRunUnityChanged: Tools status is OUTDATED
+2019-01-31T16:03:53.207-02:00| vmui| I125: VMHSGetDataFileKey: Could not get the dataFileKey from VMDB
+2019-01-31T16:03:53.731-02:00| vmui| I125: VMHSGetDataFileKey: Could not get the dataFileKey from VMDB
+2019-01-31T16:03:53.731-02:00| vmui| I125: CVMUIFrame::

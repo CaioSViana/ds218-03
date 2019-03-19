@@ -1,0 +1,5 @@
+porte '[6.1,6.3]'.
+05/02/2019 14:55:52 - Skipping non-applicable package Microsoft.Windows.UniversalCRT.Msu.7: A versão '10.0.17134.0' do SO atual não está no intervalo de versão com suporte '[6.1,6.2)'.
+05/02/2019 14:55:56 - Skipping non-applicable package Microsoft.VisualStudio.NuGet.PowershellBindingRedirect: A versão '10.0.17134.0' do SO atual não está no intervalo de versão com suporte '[6.1,6.2)'.
+05/02/2019 14:56:01 - Skipping non-applicable package Microsoft.DiagnosticsHub.KB2882822.Win7: A versão '10.0.17134.0' do SO atual não está no intervalo de versão com suporte '[6.1,6.2)'.
+05/02/2019 14:56:02 - Skipping non-applicable package Microsoft.Net.4.7.FullRedist: A versão '10.0.17134.0' do SO atual não está

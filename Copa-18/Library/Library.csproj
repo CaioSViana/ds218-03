@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC7BB554-8113-4CF8-A16B-CDF8B6B87713}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\EstadioBLL.cs" />
+    <Compile Include="Business\FaseBLL.cs" />
+    <Compile Include="Business\GrupoBLL.cs" />
+    <Compile Include="Business\JogadorBLL.cs" />
+    <Compile Include="Business\PartidaBLL.cs" />
+    <Compile Include="Business\PosicaoBLL.cs" />
+    <Compile Include="Business\SelecaoBLL.cs" />
+    <Compile Include="DAL\ConnectionFactory.cs" />
+    <Compile Include="DAL\PartidaDAL.cs" />
+    <Compile Include="DAL\PlacarDAL.cs" />
+    <Compile Include="DAL\SelecaoDAL.cs" />
+    <Compile Include="DAL\JogadorDAL.cs" />
+    <Compile Include="DAL\FaseDAL.cs" />
+    <Compile Include="DAL\PosicaoDAL.cs" />
+    <Compile Include="DAL\GrupoDAL.cs" />
+    <Compile Include="DAL\EstadioDAL.cs" />
+    <Compile Include="Model\Estadio.cs" />
+    <Compile Include="Model\Fase.cs" />
+    <Compile Include="Model\Grupo.cs" />
+    <Compile Include="Model\Jogador.cs" />
+    <Compile Include="Model\Partida.cs" />
+    <Compile Include="Model\Placar.cs" />
+    <Compile Include="Model\Posicao.cs" />
+    <Compile Include="Model\Selecao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\ProcedureAulaRelatorios.sql" />
+    <Content Include="DAL\scriptCopa.sql" />
+    <Content Include="DAL\scriptCopa1.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
